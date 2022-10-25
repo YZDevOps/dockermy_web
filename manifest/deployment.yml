@@ -16,4 +16,4 @@ spec:
         - name: samplewebapp4 
           image: clusterregister1976.azurecr.io/samplewebapp4
           ports:
-          - containerPort: 3000
+          - containerPort: 80
