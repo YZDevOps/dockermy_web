@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: samplewebapp4 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: samplewebapp4
+  template:
+    metadata:
+      labels:
+        app: samplewebapp4 
+    spec:
+      containers:
+        - name: samplewebapp4 
+          image: clusterregister1976.azurecr.io/samplewebapp4
+          ports:
+          - containerPort: 3000
